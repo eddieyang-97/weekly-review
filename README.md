@@ -21,6 +21,8 @@ The canonical skill folder is `.agents/skills/weekly-review`. Keep `SKILL.md` an
 
 Connector access, local files, persistence and document editing depend on the session. You can finish the review in chat and copy out the draft if your session lacks storage or editing tools.
 
+See [Private plugin setup](docs/private-plugins.md) to package this skill for your own ChatGPT or Claude account.
+
 ## Personal output pointers
 
 Use the **Outputs** section of the private profile to set a destination for each kind of output. For a document, include its link and the target tab or section if applicable. For a local file, give its path or the folder for new files. You can choose chat for the evidence brief and weekly overview, and leave the longer reflection blank if you prefer. The skill shows the draft and destination before any external write and waits for your approval.
