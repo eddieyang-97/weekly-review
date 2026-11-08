@@ -14,10 +14,20 @@ The canonical skill folder is `.agents/skills/weekly-review`. Keep `SKILL.md` an
 | Environment | Setup |
 | --- | --- |
 | Codex | Open the repository as a project and invoke `$weekly-review`. [Codex skill discovery](https://learn.chatgpt.com/docs/build-skills) |
-| ChatGPT Chat or Work | Use the skill through an installed plugin that bundles it, or supply [SKILL.md](.agents/skills/weekly-review/SKILL.md) as chat or project instructions. [ChatGPT skill availability](https://learn.chatgpt.com/docs/build-skills) |
-| Claude Code | Copy the skill folder to `.claude/skills/weekly-review/` in your project and invoke `/weekly-review`. [Claude Code skills](https://code.claude.com/docs/en/skills) |
-| GitHub Copilot in VS Code | Open the repository in a local chat session that discovers `.agents/skills/`. For sessions using `.github/skills/`, copy the same skill folder to `.github/skills/weekly-review/`. [VS Code skill locations](https://code.visualstudio.com/docs/agent-customization/agent-skills) |
-| Other agents | Use the agent's skill installation path or give it the instructions from `SKILL.md`. |
+| ChatGPT Chat or Work | Prefer an installed plugin containing the skill. Alternatively, supply [SKILL.md](.agents/skills/weekly-review/SKILL.md) as chat or project instructions; the review workflow still works, but the optional `references/sources.example.md` profile template must be supplied separately if needed. [ChatGPT skill availability](https://learn.chatgpt.com/docs/build-skills) |
+| Claude Code | Symlink `.claude/skills/weekly-review/` to the canonical skill folder to avoid stale copies (command below), then invoke `/weekly-review`. Copy the folder instead if symlinks are unavailable, and refresh that copy after updates. [Claude Code skills](https://code.claude.com/docs/en/skills) |
+| GitHub Copilot in VS Code | Use `.github/skills/weekly-review/` as the recommended project skill location (copy or symlink the canonical folder). VS Code local agent sessions that discover `.agents/skills/` can use this repository's folder directly. [VS Code skill locations](https://code.visualstudio.com/docs/agent-customization/agent-skills) |
+| Claude.ai / Claude app | Upload the skill ZIP through **Customize → Skills**. See [Private plugin setup](docs/private-plugins.md#claude-on-the-web). |
+| Other agents | Install the complete skill folder using the agent's supported location. Alternatively, supply `SKILL.md` alone as instructions: the core workflow works, but the optional reference profile template will not be available unless supplied separately. |
+
+For Claude Code in this repository, create a symlink from the project root on macOS/Linux:
+
+```bash
+mkdir -p .claude/skills
+ln -s ../../.agents/skills/weekly-review .claude/skills/weekly-review
+```
+
+This points to the canonical skill, so later edits take effect without recopying it. On systems where symlinks are inconvenient, copy the folder and recopy it after changes. Installed ChatGPT/Claude plugins are separate packaged releases and **do not update automatically** when the GitHub source changes.
 
 Connector access, local files, persistence and document editing depend on the session. You can finish the review in chat and copy out the draft if your session lacks storage or editing tools.
 
