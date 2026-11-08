@@ -1,24 +1,26 @@
 ---
 name: weekly-review
-description: Gather a week's evidence from connected sources and guide a two-phase weekly reflection. Use for requests such as start weekly review, gather this week's evidence, or start reflection from a weekly brief.
+description: Gather a week's evidence from available sources and guide a two-phase weekly reflection. Use for requests such as start weekly review, gather this week's evidence, or start reflection from a weekly brief.
 ---
 
 # Weekly review
+
+Conduct the review using the evidence sources and capabilities available in the current session. Keep evidence gathering and reflection separate. Treat unavailable evidence as a coverage gap and leave the underlying outcome open.
 
 Use the user's private source profile or project instructions when provided. For setup, offer [the blank source profile](references/sources.example.md) and have the user keep the filled copy outside the shared repository. If no profile is available, proceed with sources the user has identified and ask only for details that materially affect the review.
 
 ## Gather evidence
 
-Resolve the review dates, timezone and collection cutoff. Read the existing review and template for prior intentions, unresolved questions and any entry in progress. Gather evidence from the user's scoped connections and look for meaningful developments outside the stated goals. Include past chats when explicitly in scope and accessible.
+Resolve the review dates, timezone and collection cutoff. Use available document tools or user-supplied context to read the existing review and template for prior intentions, unresolved questions and any entry in progress. Gather evidence from the user's scoped sources using available read tools. Use supplied files, excerpts or context to fill gaps where possible. Look for meaningful developments outside the stated goals. Include past chats when explicitly in scope and accessible.
 
-Use local evidence as an optional supplement. Accept attachments, a folder supplied for the review, or a folder configured in the private source profile. Resolve paths relative to the profile file when it supplies a relative path. For a configured evidence root, use the `YYYY-MM-DD` folder for the review's start date unless the profile specifies another layout. Read files relevant to that week and cite their local paths or attachment names. Continue gathering from connected sources when local evidence is absent. If the user adds files after delivery, incorporate them into the existing brief and reuse the connected evidence already gathered.
+Use local evidence as an optional supplement when file access is available. Accept attachments, a folder supplied for the review, or a folder configured in the private source profile. Resolve paths relative to the profile file when it supplies a relative path. For a configured evidence root, use the `YYYY-MM-DD` folder for the review's start date unless the profile specifies another layout. Read files relevant to that week and cite their local paths or attachment names. If the user adds files after delivery, incorporate them into the existing brief and reuse the evidence already gathered.
 
 For consequential claims, distinguish plans, delivered work, outcomes, verified impact and user-reported effort. Separate source observations from user reports and interpretations. Use dated source links, flag contradictions and summarize material coverage gaps. Continue with available sources and ask a focused question when the answer would change the review.
 
-Deliver a concise brief in the current chat by default. Use the evidence brief destination in the private profile when authorized. For an external write, preview the brief and exact destination in chat for approval. Include the date window, cutoff, key developments, progress against intentions, and open questions or gaps. Keep source access read-only. Once the brief is ready, wait for an explicit request to start reflection.
+Deliver a concise brief in the current chat by default. Use the evidence brief destination in the private profile when authorized and accessible. For an external write, preview the brief and exact destination in chat for approval. Include the date window, cutoff, key developments, progress against intentions, and open questions or gaps. Keep source access read-only. Once the brief is ready, wait for an explicit request to start reflection.
 
 ## Reflect
 
 When asked to start reflection, use the relevant brief from this chat or the one the user points to. If the brief is missing or ambiguous, resolve which week and brief to use before starting. Open with one question about the user's experience. Follow their answer and bring in evidence selectively when it clarifies an event or tests an assumption. Check additional evidence during reflection when it materially changes the discussion.
 
-When the user is ready to wrap up, propose a short weekly overview and a few priorities. Build on any existing entry using its template. Offer a separate longer note when an idea warrants it. Use the matching output pointer in the private profile. Resolve relative local paths against the profile file. If a pointer is absent or unclear, present the output in chat and clarify the destination only if the user requests a write. Preview each external edit with its exact destination and apply it only after the user approves that specific draft and destination. Verify the applied edit. Keep private identifiers, excerpts, briefs and personal output out of shared artifacts.
+When the user is ready to wrap up, propose a short weekly overview and a few priorities. Build on any existing entry using its template. Offer a separate longer note when an idea warrants it. Use the matching output pointer in the private profile. Resolve relative local paths against the profile file. If a destination is missing, unclear or unavailable, provide the draft in chat. Preview each external edit with its exact destination and apply it only when editing is available and the user approves that specific draft and destination. Verify the applied edit. Keep private identifiers, excerpts, briefs and personal output out of shared artifacts.

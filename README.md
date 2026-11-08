@@ -1,13 +1,25 @@
 # Weekly review
 
-A Codex skill that gathers evidence from your existing connections, then helps you reflect on the week.
+A weekly review workflow in the [Agent Skills format](https://agentskills.io/specification). It gathers evidence, then helps you reflect on the week. Each session uses the sources and tools it can access.
 
-1. Open this folder as a Codex project so it can discover the bundled `.agents/skills/weekly-review` skill.
+1. Load the `weekly-review` skill using the setup for your agent below.
 2. Copy the [blank profile](.agents/skills/weekly-review/references/sources.example.md) to a private location outside this checkout. Fill in your sources and output pointers. You can also put those details in private project instructions.
-3. Start a chat with `$weekly-review Gather this week's evidence`. Point it to your private profile if the chat does not already have it. Connected sources supply the main evidence.
+3. Ask the agent to **Gather this week's evidence**. Point it to your private profile if needed. The agent starts with the sources it can access and flags gaps in the brief.
 4. When the brief is ready, say **Start reflection**. To resume in another chat, provide the brief or its private link. Approve any proposed external edit by draft and destination.
 
-For a chat without skill support, supply [SKILL.md](.agents/skills/weekly-review/SKILL.md) as workflow instructions. The session needs access to the connectors you plan to use.
+## Agent setup
+
+The canonical skill folder is `.agents/skills/weekly-review`. Keep `SKILL.md` and its `references/` folder together when installing or copying it.
+
+| Environment | Setup |
+| --- | --- |
+| Codex | Open the repository as a project and invoke `$weekly-review`. [Codex skill discovery](https://learn.chatgpt.com/docs/build-skills) |
+| ChatGPT Chat or Work | Use the skill through an installed plugin that bundles it, or supply [SKILL.md](.agents/skills/weekly-review/SKILL.md) as chat or project instructions. [ChatGPT skill availability](https://learn.chatgpt.com/docs/build-skills) |
+| Claude Code | Copy the skill folder to `.claude/skills/weekly-review/` in your project and invoke `/weekly-review`. [Claude Code skills](https://code.claude.com/docs/en/skills) |
+| GitHub Copilot in VS Code | Open the repository in a local chat session that discovers `.agents/skills/`. For sessions using `.github/skills/`, copy the same skill folder to `.github/skills/weekly-review/`. [VS Code skill locations](https://code.visualstudio.com/docs/agent-customization/agent-skills) |
+| Other agents | Use the agent's skill installation path or give it the instructions from `SKILL.md`. |
+
+Connector access, local files, persistence and document editing depend on the session. You can finish the review in chat and copy out the draft if your session lacks storage or editing tools.
 
 ## Personal output pointers
 
