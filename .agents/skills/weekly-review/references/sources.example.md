@@ -22,7 +22,7 @@ Copy this file to a private location and fill in the sections you use. Add stabl
 
 - Discovery scope and any exclusions —
 - Past chat scope, if enabled —
-- Optional local inbox or files —
+- Optional local evidence folder or week-specific paths — e.g. `local-evidence/YYYY-MM-DD/`, relative to this private profile, using the review week's start date.
 
 ## Destinations
 

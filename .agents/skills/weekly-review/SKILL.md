@@ -9,7 +9,9 @@ Use the user's private source profile or project instructions when provided. For
 
 ## Gather evidence
 
-Resolve the review dates, timezone and collection cutoff. Read the existing review and template for prior intentions, unresolved questions and any entry in progress. Gather evidence from the user's scoped connections and look for meaningful developments outside the stated goals. Include past chats when explicitly in scope and accessible. Local files, notes and excerpts are optional supplements.
+Resolve the review dates, timezone and collection cutoff. Read the existing review and template for prior intentions, unresolved questions and any entry in progress. Gather evidence from the user's scoped connections and look for meaningful developments outside the stated goals. Include past chats when explicitly in scope and accessible.
+
+Use local evidence as an optional supplement. Accept attachments, a folder supplied for the review, or a folder configured in the private source profile. Resolve paths relative to the profile file when it supplies a relative path. For a configured evidence root, use the `YYYY-MM-DD` folder for the review's start date unless the profile specifies another layout. Read files relevant to that week and cite their local paths or attachment names. Continue gathering from connected sources when local evidence is absent. If the user adds files after delivery, incorporate them into the existing brief and reuse the connected evidence already gathered.
 
 For consequential claims, distinguish plans, delivered work, outcomes, verified impact and user-reported effort. Separate source observations from user reports and interpretations. Use dated source links, flag contradictions and summarize material coverage gaps. Continue with available sources and ask a focused question when the answer would change the review.
 
